@@ -1,0 +1,701 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+	--basic-fon: #E5E5E5;
+	--basic-text: #AE7C78;
+	--basic-pink-dark: #D89999;
+	--basic-white: #FFFFFF;
+	--basic-fon-contacts: #F7FAFC;
+}
+
+.page {
+	height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 1220px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat","Playfair Display", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-text);
+  background-color: var(--basic-fon);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.title {
+	margin: 0;
+	padding: 0;
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	width: 1220px;
+  margin: 0 auto;
+ 	padding: 0 10px;
+}
+
+.title-medium {
+	font-family: Playfair Display;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+.main-header {
+	margin-top: 25px;
+	border-top: 1px solid var(--basic-text);
+	border-bottom: 1px solid var(--basic-text);
+	position: relative;
+}
+
+.main-nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-nav-list li:nth-child(3) {
+	margin-right: 135px;
+	padding-left: 25px;
+}
+
+.main-nav-link {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 23px 0 20px 0;
+	color: var(--basic-text);
+	font-family: Montserrat;
+}
+
+.main-logo {
+	padding: 12px 0 10px 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main-logo-img {
+	display: block;
+	width: 100px;
+	height: 32px;
+}
+
+.about {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+
+.about-content-box {
+	width: 384px;
+}
+
+.about-title {
+	font-size: 44px;
+	line-height: 59px;
+	font-family: Playfair Display;
+	font-weight: 400;
+	margin: 81px 0 24px;
+}
+
+.about-title-box {
+	font-style: italic;	
+}
+
+.about-text {
+	margin: 0 0 64px;
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.button {
+	width: 285px;
+	border-radius: 40px;
+	background-color: var(--basic-pink-dark);
+	color: var(--basic-white);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.button:hover {
+	background-color: var(--basic-text);
+}
+
+.about-link {
+	padding: 30px 69px;
+}
+
+.about-gallery {
+	width: 793px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about-img {
+	border-radius: 10px;
+}
+
+.about-gallery li:first-child {
+	margin-top: 140px;
+}
+
+.about-gallery li:last-child {
+	margin-top: 82px;
+}
+
+.advantages {
+	margin-bottom: 79px;
+}
+
+.advantages-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.advantages-item {
+	justify-self: end;
+}
+
+.advantages-item-title {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.advantages-item-text {
+	width: 285px;
+	margin: 0;
+}
+
+.advantages-item-delivery {
+	position: relative;
+}
+
+.advantages-item-delivery::before {
+	content: "";
+  position: absolute;
+  top: -1px;
+  left: -101px;
+  width: 82px;
+  height: 52px;
+  background-image: url(img/icon-delivery.svg);
+  background-repeat: no-repeat;
+}
+
+.advantages-item-product {
+	position: relative;
+}
+
+.advantages-item-product::before {
+	content: "";
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	top: -1px;
+	left: -63px;
+	background-image: url(img/icon-bouquet.svg);
+	background-repeat: no-repeat;
+}
+
+.advantages-item-photo {
+	position: relative;
+}
+
+.advantages-item-photo::before {
+	content: "";
+	position: absolute;
+	width: 59px;
+	height: 52px;
+	top: -1px;
+	left: -78px;
+	background-image: url(img/icon-foto.svg);
+	background-repeat: no-repeat;
+}
+
+.slide-card {
+	width: 794px;
+	margin: 0 auto 68px;
+}
+
+.slide-card-title {
+	text-align: center;
+	letter-spacing: 0.7px;
+	padding-left: 12px;
+	margin-bottom: 36px;
+}
+
+.card-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.slide-content-box {
+	width: 387px;
+}
+
+.card-item-title {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 500;
+	margin-bottom: 21px;
+	padding-top: 27px;
+}
+
+.card-item-text {
+	margin: 0 0 24px;
+}
+
+.card-item-size {
+	margin: 0 0 24px;
+}
+
+.card-item-price {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 500;
+	margin:0 0 63px;
+}
+
+.card-item-link {
+	padding: 30px 106px;
+}
+
+.slide-button-box {
+	width: 122px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 11px;
+}
+
+.slide-button {
+	width: 52px;
+	height: 20px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: transparent;
+}
+
+.slide-button-back {
+	background-image: url(img/indicator-back.svg);
+	background-repeat: no-repeat;
+}
+
+.slide-button-next {
+	background-image: url(img/indicator-next.svg);
+	background-repeat: no-repeat;
+}
+
+.product {
+	margin-bottom: 80px;
+}
+
+.product-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 19px;
+}
+
+.product-item-title {
+	color: var(--basic-white);
+	margin-bottom: 8px;
+	text-align: center;
+	padding: 183px 23px 0 21px;
+	letter-spacing: 0.5px;
+}
+
+.product-item-text {
+	color: var(--basic-white);
+	margin: 0;
+	text-align: center;
+	padding-bottom: 182px;
+}
+
+.product-item {
+	width: 388px;
+	height: 442px;
+	display: block;
+	border-radius: 10px;
+}
+
+.product-item-wedding {
+	background-image: url(img/wedding-bouquet.jpg);
+	background-repeat: no-repeat;
+}
+
+.product-item-pions {
+	background-image: url(img/pions-bouquet.jpg);
+	background-repeat: no-repeat;
+}
+
+.product-item-choice {
+	background-image: url(img/choice-bouquet.jpg);
+	background-repeat: no-repeat;
+}
+
+.product-item-link {
+	background-color: var(--basic-text);
+	opacity: 0.6;
+	display: inline-block;
+	vertical-align: middle;
+	width: 388px;
+	height: 442px;
+	border-radius: 10px;
+}
+
+.product-item-link:hover {
+	opacity: 0.9;
+}
+
+.discount {
+	width: 1200px;
+	background-image: url(img/bouquet-content.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin-bottom: 80px;
+}
+
+.discount-content-box {
+	width: 610px;
+	background-color: var(--basic-text);
+	color: var(--basic-white);
+}
+
+.discount-title {
+	font-family: Playfair Display;
+	font-size: 44px;
+	line-height: 59px;
+	padding: 40px 30px 0 102px;
+	letter-spacing: 0.1px;
+	margin-bottom: 24px;
+}
+
+.discount-text {
+	margin: 0;
+	width: 488px;
+	padding: 0 0 64px 102px;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.conditions {
+	margin-bottom: 78px;
+}
+
+.conditions-title {
+	text-align: center;
+	margin-bottom: 36px;
+	letter-spacing: 0.7px;
+}
+
+.conditions-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.conditions-item {
+	width: 285px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.conditions-item-title {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 8px;
+	padding-top: 62px;
+}
+
+.conditions-item-text {
+	margin: 0;
+	text-align: center;
+}
+
+.conditions-item-order {
+	background-image: url(img/icon-order.svg);
+}
+
+.conditions-item-details {
+	background-image: url(img/icon-details.svg);
+}
+
+.conditions-item-payment {
+	background-image: url(img/icon-payment.svg);
+}
+
+.conditions-item-delivery {
+	background-image: url(img/icon-delivery.svg);
+}
+
+.news {
+	display: flex;
+	margin-bottom: 80px;
+}
+
+.news-box {
+	width: 508px;
+}
+
+.news-img-box {
+	width: 692px;
+	display: grid;
+	grid-template-columns: 285px 1fr;
+	grid-gap: 20px;
+}
+
+.news-img-holder {
+	display: grid;
+	grid-row-gap: 20px;
+}
+
+.news-img {
+	display: block;
+}
+
+.news-title {
+	width: 387px;
+	margin-bottom: 40px;
+	padding-top: 70px;
+	letter-spacing: 0.7px;
+}
+
+.news-text {
+	width: 387px;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0 0 40px;
+}
+
+.news-list-socials {
+	width: 119px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.news-item-socials {
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.news-socials-link {
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.news-socials-instagram {
+	width: 20px;
+	height: 20px;
+	background-image: url(img/instagram_icon-content.svg);
+}
+
+.news-socials-facebook {
+	width: 12px;
+	height: 20px;
+	background-image: url(img/facebook_icon-content.svg);
+}
+
+.news-socials-twitter {
+	width: 26px;
+	height: 20px;
+	background-image: url(img/twitter_icon-content.svg);
+}
+
+.reviews {
+	margin-bottom: 80px;
+}
+
+.reviews-box {
+	border: 1px solid var(--basic-text);
+}
+
+.reviews-title {
+	letter-spacing: 0.7px;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-top: 40px;
+}
+
+.reviews-list {
+	width: 1112px;
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-between;*/
+	margin: 0 auto;
+	padding-bottom: 32px;
+}
+
+.reviews-item {
+	width: 300px;
+	margin: 0 106px 30px 0;
+}
+
+.reviews-item:last-child {
+	margin-right: 0;
+}
+
+.reviews-quote {
+	margin: 0;
+	text-align: center;
+}
+
+.reviews-cite-text {
+	margin: 0 0 16px;
+}
+
+.reviews-cite {
+	font-style: inherit;
+}
+
+.contacts-box {
+	position: relative;
+}
+
+.contacts-map {
+	display: block;
+	width: 1440px;
+	height: 644px;
+	margin: 0 auto;
+}
+
+.contacts-content {
+	width: 386px;
+	padding: 40px 108px 32px 35px;
+	border-radius: 12px;
+	background-color: var(--basic-fon-contacts);
+	position: absolute;
+	top: 52px;
+	left: 112px;
+}
+
+.contacts-title {
+	margin-bottom: 40px;
+}
+
+.contacts-item {
+	margin-bottom: 30px;
+}
+
+.contacts-subtitle {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contacts-text {
+	margin: 0;
+}
+
+.contacts-link,.contacts-mail {
+	color: var(--basic-text);
+}
+
+.footer {
+	background-color: var(--basic-text);
+}
+
+.footer-logo {
+	display: block;
+	width: 100px;
+	height: 32px;
+	padding: 24px 5px 30px;
+	margin-right: 100px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 85px 15px 0;
+}
+
+.footer-nav-item {
+	margin-right: 48px;
+}
+
+.footer-nav-item:last-child {
+	margin-right: 0;
+}
+
+.footer-nav-link {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 31px 10px;
+	color: var(--basic-white);
+}
+
+.footer-socials-list {
+	width: 103px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px 0 20px 13px;
+}
+
+.footer-socials-link {
+	display: block;
+}
+
+.footer-socials-instagram {
+	width: 20px;
+	height: 20px;
+	background-image: url(img/instagram_icon-foo.svg);
+}
+
+.footer-socials-facebook {
+	width: 12px;
+	height: 20px;
+	background-image: url(img/facebook_icon-foo.svg);
+}
+
+.footer-socials-twitter {
+	width: 26px;
+	height: 20px;
+	background-image: url(img/twitter_icon-foo.svg);
+}
