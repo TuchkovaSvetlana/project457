@@ -17,31 +17,31 @@
 }
 
 body {
-  min-height: 100%;
-  min-width: 1220px;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat","Playfair Display", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: var(--basic-text);
-  background-color: var(--basic-fon);
+	min-height: 100%;
+	min-width: 1220px;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat","Playfair Display", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: var(--basic-text);
+background-color: var(--basic-fon);
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .link {
@@ -61,8 +61,8 @@ body {
 
 .container {
 	width: 1220px;
-  margin: 0 auto;
- 	padding: 0 10px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .title-medium {
@@ -209,13 +209,13 @@ body {
 
 .advantages-item-delivery::before {
 	content: "";
-  position: absolute;
-  top: -1px;
-  left: -101px;
-  width: 82px;
-  height: 52px;
-  background-image: url(img/icon-delivery.svg);
-  background-repeat: no-repeat;
+	position: absolute;
+	top: -1px;
+	left: -101px;
+	width: 82px;
+	height: 52px;
+	background-image: url(../img/icon-delivery.svg);
+	background-repeat: no-repeat;
 }
 
 .advantages-item-product {
@@ -229,7 +229,7 @@ body {
 	height: 52px;
 	top: -1px;
 	left: -63px;
-	background-image: url(img/icon-bouquet.svg);
+	background-image: url(../img/icon-bouquet.svg);
 	background-repeat: no-repeat;
 }
 
@@ -244,7 +244,7 @@ body {
 	height: 52px;
 	top: -1px;
 	left: -78px;
-	background-image: url(img/icon-foto.svg);
+	background-image: url(../img/icon-foto.svg);
 	background-repeat: no-repeat;
 }
 
@@ -316,12 +316,12 @@ body {
 }
 
 .slide-button-back {
-	background-image: url(img/indicator-back.svg);
+	background-image: url(../img/indicator-back.svg);
 	background-repeat: no-repeat;
 }
 
 .slide-button-next {
-	background-image: url(img/indicator-next.svg);
+	background-image: url(../img/indicator-next.svg);
 	background-repeat: no-repeat;
 }
 
@@ -358,17 +358,17 @@ body {
 }
 
 .product-item-wedding {
-	background-image: url(img/wedding-bouquet.jpg);
+	background-image: url(../img/wedding-bouquet.jpg);
 	background-repeat: no-repeat;
 }
 
 .product-item-pions {
-	background-image: url(img/pions-bouquet.jpg);
+	background-image: url(../img/pions-bouquet.jpg);
 	background-repeat: no-repeat;
 }
 
 .product-item-choice {
-	background-image: url(img/choice-bouquet.jpg);
+	background-image: url(../img/choice-bouquet.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -388,7 +388,7 @@ body {
 
 .discount {
 	width: 1200px;
-	background-image: url(img/bouquet-content.jpg);
+	background-image: url(../img/bouquet-content.jpg);
 	background-repeat: no-repeat;
 	background-position: right center;
 	margin-bottom: 80px;
@@ -454,19 +454,19 @@ body {
 }
 
 .conditions-item-order {
-	background-image: url(img/icon-order.svg);
+	background-image: url(../img/icon-order.svg);
 }
 
 .conditions-item-details {
-	background-image: url(img/icon-details.svg);
+	background-image: url(../img/icon-details.svg);
 }
 
 .conditions-item-payment {
-	background-image: url(img/icon-payment.svg);
+	background-image: url(../img/icon-payment.svg);
 }
 
 .conditions-item-delivery {
-	background-image: url(img/icon-delivery.svg);
+	background-image: url(../img/icon-delivery.svg);
 }
 
 .news {
@@ -509,7 +509,7 @@ body {
 }
 
 .news-list-socials {
-	width: 119px;
+	width: 100px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -517,6 +517,10 @@ body {
 .news-item-socials {
 	margin-right: 20px;
 	margin-bottom: 15px;
+}
+
+.news-item-socials:last-child {
+	margin-right: 0;
 }
 
 .news-socials-link {
@@ -527,19 +531,19 @@ body {
 .news-socials-instagram {
 	width: 20px;
 	height: 20px;
-	background-image: url(img/instagram_icon-content.svg);
+	background-image: url(../img/instagram_icon-content.svg);
 }
 
 .news-socials-facebook {
 	width: 12px;
 	height: 20px;
-	background-image: url(img/facebook_icon-content.svg);
+	background-image: url(../img/facebook_icon-content.svg);
 }
 
 .news-socials-twitter {
 	width: 26px;
 	height: 20px;
-	background-image: url(img/twitter_icon-content.svg);
+	background-image: url(../img/twitter_icon-content.svg);
 }
 
 .reviews {
@@ -685,17 +689,17 @@ body {
 .footer-socials-instagram {
 	width: 20px;
 	height: 20px;
-	background-image: url(img/instagram_icon-foo.svg);
+	background-image: url(../img/instagram_icon-foo.svg);
 }
 
 .footer-socials-facebook {
 	width: 12px;
 	height: 20px;
-	background-image: url(img/facebook_icon-foo.svg);
+	background-image: url(../img/facebook_icon-foo.svg);
 }
 
 .footer-socials-twitter {
 	width: 26px;
 	height: 20px;
-	background-image: url(img/twitter_icon-foo.svg);
+	background-image: url(../img/twitter_icon-foo.svg);
 }
